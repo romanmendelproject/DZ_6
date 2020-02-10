@@ -8,7 +8,7 @@
         <h4>Students: </h4>
         <p>{% for student in course.students.all %}{{ student }}</p>{% endfor %}
         <h4>Timetable</h4>
-        {% for lesson in course.lesson_set.all %}
+        {% for lesson in course.lesson.all %}
         <h5>Lesson:</h5>
         <p>{{ lesson.title }}</p>
         <p>{{ lesson.description }}</p>
